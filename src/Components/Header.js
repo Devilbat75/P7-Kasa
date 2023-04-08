@@ -1,10 +1,13 @@
-import "../styles/Banner.css";
+import "../styles/Header.css";
 import logo from "../Assets/.LOGO-1.png";
 
 function Banner() {
     return( <div className="kasa-banner">
                 <img src={logo} alt="Logo Kasa" className="kasa-logo"/>
-                <h1 className="kasa-title">Kasa</h1>
+                <ul className="kasa-nav">
+                    <li className="kasa-accueil">Accueil</li>
+                    <li className="kasa-a_propos">A Propos</li>
+                </ul>
             </div>)
 }
 
