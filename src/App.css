@@ -1,3 +1,10 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-top: 40px;
+}
+
 .App {
   text-align: center;
 }

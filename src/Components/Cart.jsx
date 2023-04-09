@@ -1,4 +1,4 @@
-import cover from "../backend/item.json"
+import "../backend/item.json"
 import "../styles/Cart.css"
 
 function Logement() {

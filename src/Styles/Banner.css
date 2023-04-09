@@ -1,0 +1,21 @@
+.kasa-banner {
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../Assets/Banner.png);
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    height: 223px;
+    justify-content: center;
+    margin: 43px auto;
+    max-width: 95%;
+    padding: 20px;
+    position: relative;
+}
+
+.kasa-banner p {
+    color: #fff;
+    font-size: clamp(20px,4vw,48px);
+    font-weight: 500
+}

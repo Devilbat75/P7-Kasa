@@ -1,4 +1,4 @@
-.kasa-banner {
+.kasa-header {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -7,14 +7,24 @@
     max-width: 95%;
 }
 
-.kasa-logo {
+.kasa-header img {
     height: 60%;
 }
 
-.kasa-nav {
+.kasa-nav-list {
     color: #ff6060;
     display: flex;
     font-size: clamp(12px,2.5vw,24px);
     gap: 50px;
-    list-style-type: none;
+    font-weight: 500;
+}
+
+.kasa-accueil {
+    color: #ff6060;
+    position: relative;
+    text-decoration: underline solid #ff6060;
+}
+
+li {
+    list-style: none;
 }
