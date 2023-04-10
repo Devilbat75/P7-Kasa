@@ -1,0 +1,29 @@
+.footer {
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 209px;
+    background: black;
+    color: var(--colorWhite);;
+    font-size: 24px;
+}
+
+.img_footer { 
+    margin: 0 auto; 
+}
+.img_footer img { 
+    height: 40px; 
+    width: 100%; 
+}
+.copyright {
+    color: white;
+    height: 30px; 
+    text-align: center; 
+}
+.copyright p { 
+    margin-top: 10px;
+    font-size: 20px; 
+}

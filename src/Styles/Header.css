@@ -5,6 +5,8 @@
     height: 68px;
     justify-content: space-between;
     max-width: 95%;
+    margin-left: 25px;
+    margin-top: 30px;
 }
 
 .kasa-header img {
@@ -16,7 +18,6 @@
     display: flex;
     font-size: clamp(12px,2.5vw,24px);
     gap: 50px;
-    font-weight: 500;
 }
 
 .kasa-accueil {

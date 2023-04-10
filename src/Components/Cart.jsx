@@ -1,14 +1,27 @@
-import "../backend/item.json"
+import React from "react"
+import items from "../Datas/item.json"
 import "../styles/Cart.css"
 
-function Logement() {
+//Composant qui permet de récuperer les informations des logements et les mettres sous forme de Card
+
+const Cards = () => {
     return (
-        <ul>
-            {cover.map((plant) => (
-                <li>{plant}</li>
-            ))}
-        </ul>
+        <div className="kasa-all-logements">
+
+            {/*Liste de la base de données*/}
+            {items.map((item) => {
+                const { id, cover, title } = item;
+
+                //afficher les logements sur la page d'accueil
+                return (
+                    <div className="kasa-fiche-logement" key={id}>
+                        <img src={cover} alt={title} />
+                        <h3> {title} </h3>
+                    </div>
+                )
+            })}
+        </div>
     )
 }
 
-export default ShoppingList
+export default Cards
