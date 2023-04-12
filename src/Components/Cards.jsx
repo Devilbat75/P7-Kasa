@@ -1,6 +1,6 @@
 import React from "react"
-import items from "../Datas/item.json"
-import "../styles/Cart.css"
+import items from "../datas/item.json"
+import "../styles/Cards.css"
 
 //Composant qui permet de récuperer les informations des logements et les mettres sous forme de Card
 

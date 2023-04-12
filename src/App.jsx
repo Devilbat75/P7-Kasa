@@ -1,18 +1,19 @@
 import './App.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
-import Banner from "./Components/Banner";
-import Header from "./Components/Header";
-import Cards from './Components/Cart';
-import Footer from './Components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
     return (
-        <>
-            <Header />
-            <Banner />
-            <Cards />
-            <Footer />
-        </>)
+        <Router>
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/about" element={<About />} />
+            </Routes>
+        </Router>)
 }
 
 export default App;
