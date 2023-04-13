@@ -16,7 +16,7 @@ export default function About() {
 		{
 			"id": "2",
 			"title": "Respect",
-			"content": "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.."
+			"content": "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
 		},
 		{
 			"id": "3",
