@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/Header.css";
-import logo from "../Assets/.LOGO-1.png";
+import logo from "../assets/.LOGO-1.png";
 import { Link } from 'react-router-dom';
 
 function Header() {
