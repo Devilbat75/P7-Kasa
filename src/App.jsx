@@ -7,15 +7,18 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Logement from './pages/Logement';
 import Error from './pages/Error';
+import Layout from './pages/Layout';
 
 function App() {
     return (
         <Router>
             <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route exact path="/about" element={<About />} />
-                <Route exact path='/logement/:id' element={<Logement />} />
-                <Route exact path='*' element={<Error />} />
+                <Route path='/' element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path='/logement/:id' element={<Logement />} />
+                    <Route path='about' element={<About />} />
+                    <Route path='*' element={<Error />} />
+                </Route>
             </Routes>
         </Router>)
 }

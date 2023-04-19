@@ -1,8 +1,6 @@
 import React from "react";
-import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse"
-import Footer from "../components/Footer";
 import "../styles/About.css";
 
 export default function About() {
@@ -32,7 +30,6 @@ export default function About() {
 
 	return (
 		<div>
-			<Header />
 			<Banner />
 			<main className='about_main'>
 				{aboutDatas.map(data => {
@@ -43,7 +40,6 @@ export default function About() {
 					)}
 				)}
 			</main>
-			<Footer />
 		</div>
 	)
 }
