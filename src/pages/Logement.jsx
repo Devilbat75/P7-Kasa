@@ -1,55 +1,71 @@
 import React from 'react'
 import items from '../datas/item.json'
 import Collapse from '../components/Collapse'
+import Slider from '../components/Carousel'
 import { useParams } from 'react-router-dom'
-//import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function Logement() {
+	
+	const [imageSlider, setImageSlider] = useState([]);
 
-    const logementId = useParams('id').id;
-    const itemLogement = items.filter(item => item.id === logementId);
+	const idAccomodation = useParams('id').id;
+	const dataCurrentAccomodation = items.filter(item => item.id === idAccomodation);
+	
+	useEffect(() => {
+		const dataCurrentAccomodation = items.filter(item => item.id === idAccomodation);
+		setImageSlider(dataCurrentAccomodation[0].pictures);
+	}, [idAccomodation]);
 
-    const name = itemLogement[0].host.name.split(' '); 
-	const description  = itemLogement[0].description;
-	const equipments = itemLogement[0].equipments;
+	const name = dataCurrentAccomodation[0].host.name.split(' '); 
+	const description  = dataCurrentAccomodation[0].description;
+	const equipments = dataCurrentAccomodation[0].equipments;
 
-
-    return (
-        <>
-        <main className="logement">
-				<div className="logement_contenu">
-					<div className="logement_contenu_infos">
-						<h1>{itemLogement[0].title}</h1>
-						<p>{itemLogement[0].location}</p>
+	return (
+		<>
+			<Slider imageSlider={imageSlider}/>
+			<main className="accomodation">
+				<div className="accomodation_content">
+					<div className="accomodation_content_infos">
+						<h1>{dataCurrentAccomodation[0].title}</h1>
+						<p>{dataCurrentAccomodation[0].location}</p>
 						<div>
-							{itemLogement[0].tags.map((tag, index) => {
+							{dataCurrentAccomodation[0].tags.map((tag, index) => {
 								return (
 									<button key={index}>{tag}</button>
 								)
 							})}
 						</div>
 					</div>
-					<div className="logement_contenu_host">
+					<div className="accomodation_content_host">
 						<div>
-							<div className='logement_contenu_host_name'>
+							<div className='accomodation_content_host_name'>
 								<span>{name[0]}</span>
 								<span>{name[1]}</span>
 							</div>
-							<img src={itemLogement[0].host.picture} alt="host of this accomodation" />
+							<img src={dataCurrentAccomodation[0].host.picture} alt="host of this accomodation" />
+						</div>
+							
+						<div className="accomodation_content_host_stars">
+							{[...Array(5)].map((star, index) => {
+								return (
+									<img key={index} alt="star" />
+								)
+							})}
 						</div>
 					</div>
 				</div>
-				<div className="logement_collapse">
-					<div className="logement_collapse_item">
+				<div className="accomodation_collapse">
+					<div className="accomodation_collapse_item">
 						<Collapse title={'Description'} content={description} />	
 					</div>
-					<div className="logement_collapse_item">
+					<div className="accomodation_collapse_item">
 						<Collapse title={'Équipements'} content={equipments}/>
 					</div>	
 				</div>
 			</main>
-
-        </>)
+		</>
+	)
 }
 
-export default Logement
+export default Logement;
