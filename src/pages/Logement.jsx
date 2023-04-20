@@ -9,17 +9,17 @@ function Logement() {
 	
 	const [imageSlider, setImageSlider] = useState([]);
 
-	const idAccomodation = useParams('id').id;
-	const dataCurrentAccomodation = items.filter(item => item.id === idAccomodation);
+	const idLogement = useParams('id').id;
+	const itemCurrentLogement = items.filter(item => item.id === idLogement);
 	
 	useEffect(() => {
-		const dataCurrentAccomodation = items.filter(item => item.id === idAccomodation);
-		setImageSlider(dataCurrentAccomodation[0].pictures);
-	}, [idAccomodation]);
+		const itemCurrentLogement = items.filter(item => item.id === idLogement);
+		setImageSlider(itemCurrentLogement[0].pictures);
+	}, [idLogement]);
 
-	const name = dataCurrentAccomodation[0].host.name.split(' '); 
-	const description  = dataCurrentAccomodation[0].description;
-	const equipments = dataCurrentAccomodation[0].equipments;
+	const name = itemCurrentLogement[0].host.name.split(' '); 
+	const description  = itemCurrentLogement[0].description;
+	const equipments = itemCurrentLogement[0].equipments;
 
 	return (
 		<>
@@ -27,10 +27,10 @@ function Logement() {
 			<main className="accomodation">
 				<div className="accomodation_content">
 					<div className="accomodation_content_infos">
-						<h1>{dataCurrentAccomodation[0].title}</h1>
-						<p>{dataCurrentAccomodation[0].location}</p>
+						<h1>{itemCurrentLogement[0].title}</h1>
+						<p>{itemCurrentLogement[0].location}</p>
 						<div>
-							{dataCurrentAccomodation[0].tags.map((tag, index) => {
+							{itemCurrentLogement[0].tags.map((tag, index) => {
 								return (
 									<button key={index}>{tag}</button>
 								)
@@ -43,7 +43,7 @@ function Logement() {
 								<span>{name[0]}</span>
 								<span>{name[1]}</span>
 							</div>
-							<img src={dataCurrentAccomodation[0].host.picture} alt="host of this accomodation" />
+							<img src={itemCurrentLogement[0].host.picture} alt="host of this accomodation" />
 						</div>
 							
 						<div className="accomodation_content_host_stars">
