@@ -45,14 +45,6 @@ function Logement() {
 							</div>
 							<img src={itemCurrentLogement[0].host.picture} alt="host of this accomodation" />
 						</div>
-							
-						<div className="accomodation_content_host_stars">
-							{[...Array(5)].map((star, index) => {
-								return (
-									<img key={index} alt="star" />
-								)
-							})}
-						</div>
 					</div>
 				</div>
 				<div className="accomodation_collapse">
