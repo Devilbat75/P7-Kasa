@@ -1,0 +1,36 @@
+.Error{
+    max-width: 95%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    color: #FF6060;
+}
+    
+.Error_infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    
+.Error_infos_title {
+    font-weight: 700;
+    font-size: 288px;
+}
+
+@media screen and (max-width: 768px) {.Error_infos_title {
+        font-size: 140px;
+}}
+
+.Error_infos_content {
+    font-weight: 500;
+    font-size: clamp(20px, 4vw, 36px);
+    text-align: center;
+}    
+        
+.Error_infos_return {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: clamp(12px, 2.5vw, 18px);
+    color: #FF6060;
+}
