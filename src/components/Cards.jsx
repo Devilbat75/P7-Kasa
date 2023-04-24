@@ -14,7 +14,7 @@ const Cards = () => {
                 const { id, cover, title } = item;
                 return (
                     <div className="kasa-fiche-logement" key={id}>
-                        <Link to={ '/logement/${id}' }>
+                        <Link to={ '/logement/'+id }>
                             <img src={cover} alt={title} />
                             <h3>{title}</h3>
                         </Link>

@@ -42,6 +42,10 @@
     }
 }
 
+.kasa-nav a {
+    color: #ff6060;
+}
+
 .kasa-accueil {
     position: relative;
 }
