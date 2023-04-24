@@ -9,21 +9,43 @@
     margin-top: 30px;
 }
 
+@media screen and (max-width: 900px) {
+    .kasa-header {
+        height: 40px;
+    }
+}
+
 .kasa-header img {
     height: 60%;
+}
+
+@media screen and (max-width: 700px){
+    .kasa-header img {
+        height: 40px;
+    }
 }
 
 .kasa-nav-list {
     color: #ff6060;
     display: flex;
-    font-size: clamp(12px,2.5vw,24px);
+    font-size: clamp(12px, 2.5vw, 24px);
     gap: 50px;
+}
+
+.kasa-nav-list:hover {
+    color: #ff6060;
+}
+
+@media screen and (max-width: 700px) {
+    .kasa-nav-list {
+        gap: 20px;
+    }
 }
 
 .kasa-accueil {
     position: relative;
 }
 
-li {
-    list-style: none;
+ul {
+    list-style-type: none;
 }

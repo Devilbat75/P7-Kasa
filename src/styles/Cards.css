@@ -1,25 +1,42 @@
 .kasa-all-logements {
     display: flex;
-	flex-direction: row;
-	align-items: center;
+    flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
-	justify-content: center;
+    justify-content: center;
     background-color: #F7F7F7;
-	width: 95%;
+    width: 95%;
     border-radius: 25px;
-	margin: 0 auto;
+    margin: 0 auto;
     padding: 25px;
-	gap: 50px;
+    gap: 50px;
 }
 
-
 .kasa-fiche-logement {
-	border-radius: 10px;
+    border-radius: 10px;
     cursor: pointer;
     height: 340px;
     overflow: hidden;
     position: relative;
     width: 30%;
+}
+
+@media screen and (max-width: 1230px) {
+    .kasa-fiche-logement {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .kasa-fiche-logement {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .kasa-fiche-logement {
+        height: 200px;
+    }
 }
 
 .kasa-fiche-logement img {
@@ -30,7 +47,7 @@
 }
 
 .kasa-fiche-logement h3 {
-	align-items: flex-end;
+    align-items: flex-end;
     bottom: 20px;
     color: #fff;
     font-size: 18px;
@@ -48,14 +65,14 @@
 
 .kasa-all-logements-lien {
     display: flex;
-	flex-direction: row;
-	align-items: center;
+    flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
-	justify-content: center;
+    justify-content: center;
     background-color: #F7F7F7;
-	width: 95%;
+    width: 95%;
     border-radius: 25px;
-	margin: 0 auto;
+    margin: 0 auto;
     padding: 25px;
-	gap: 50px;
+    gap: 50px;
 }
