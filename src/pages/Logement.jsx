@@ -1,7 +1,7 @@
 import React from 'react'
 import items from '../datas/item.json'
 import Collapse from '../components/Collapse'
-import Slider from '../components/Carousel'
+import Carousel from '../components/Carousel'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
@@ -23,7 +23,7 @@ function Logement() {
 
 	return (
 		<>
-			<Slider imageSlider={imageSlider}/>
+			<Carousel imageSlider={imageSlider}/>
 			<main className="accomodation">
 				<div className="accomodation_content">
 					<div className="accomodation_content_infos">
