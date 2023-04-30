@@ -32,3 +32,13 @@
 .carousel_arrow_right {
     right: 25px;
 }
+
+.slideCount{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-weight: 500;
+    font-size: clamp(14px, 2vw, 18px);
+}

@@ -54,7 +54,7 @@
     height: 0;
 }
 
-.accomodation_collapse {
+.logement_collapse {
     display: flex;
     justify-content: space-between;
     gap: 70px;
@@ -62,6 +62,6 @@
     width: 95%;
 }
 
-.accomodation_item {
+.logement_collapse_item {
     width: 50%;
 }

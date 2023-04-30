@@ -1,0 +1,122 @@
+h1 {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+.logement_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #FF6060;
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 650px) {
+    .logement_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+.logement_content_infos {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 10px;
+}
+
+.logement_content_infos button {
+    display: inline;
+    padding: 5px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: #FF6060;
+}
+
+.logement_content_infos button:hover {
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+}
+
+.logement_content_infos div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logement_content_host {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media screen and (max-width: 650px) {
+    .logement_content_host {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.logement_content_host div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0 10px;
+}
+
+.logement_content_host img {
+    border-radius: 50%;
+    height: 64px;
+    object-fit: cover;
+    object-position: center;
+    width: 64px;
+}
+
+@media screen and (max-width: 500px) {
+    .logement_content_host {
+        gap: 0 5px;
+    }
+}
+
+.logement_content_host_name {
+    align-self: center;
+    flex-direction: column;
+}
+
+.logement_content_host_name img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.logement_content_host_stars {
+    display: flex;
+    gap: 10px;
+}
+
+.logement_content_host_stars img {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 650px) {
+    .logement_content_host_stars img {
+        width: 20px;
+        height: 20px;
+    }
+}
