@@ -4,8 +4,7 @@
     flex-direction: row;
     height: 68px;
     justify-content: space-between;
-    max-width: 95%;
-    margin-left: 25px;
+    margin-left: 0px;
     margin-top: 30px;
 }
 
@@ -52,4 +51,8 @@
 
 ul {
     list-style-type: none;
+}
+
+.nav-active{
+    text-decoration: underline 2px solid #FF6060;
 }

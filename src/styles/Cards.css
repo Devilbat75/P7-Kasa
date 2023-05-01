@@ -14,6 +14,7 @@
 @media screen and (max-width: 768px) {
     .kasa-all-logements {
         background-color: white;
+        padding: 0px;
     }
 }
 
@@ -23,7 +24,16 @@
     height: 340px;
     overflow: hidden;
     position: relative;
-    width: 30%;
+    width: 29%;
+}
+
+.kasa-fiche-logement a::after {
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.5));
+    content: "";
+    inset: 0;
+    position: absolute;
+    opacity: 50%;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 1024px) {

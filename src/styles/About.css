@@ -1,8 +1,11 @@
 .about_main {
-    width: 95%;
-    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
-.about_main_collapse {
-    margin: 40px auto;
+@media screen and (max-width: 768px) {
+    .about_main {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
