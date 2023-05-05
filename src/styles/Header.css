@@ -31,10 +31,6 @@
     gap: 50px;
 }
 
-.kasa-nav-list:hover {
-    color: #ff6060;
-}
-
 @media screen and (max-width: 700px) {
     .kasa-nav-list {
         gap: 20px;
@@ -54,5 +50,5 @@ ul {
 }
 
 .nav-active{
-    text-decoration: underline 2px solid #FF6060;
+    text-decoration: underline 3px solid #FF6060;
 }
