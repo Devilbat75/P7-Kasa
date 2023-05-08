@@ -1,6 +1,6 @@
 .banner {
     align-items: center;
-    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../assets/Banner.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../assets/Banner.png);
     background-position: 50%;
     background-size: cover;
     border-radius: 25px;
@@ -15,7 +15,7 @@
 
 .banner_about {
     align-items: center;
-    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../assets/banner-about.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../assets/banner-about.png);
     background-position: 50%;
     background-size: cover;
     border-radius: 25px;
@@ -31,4 +31,18 @@
     color: #fff;
     font-size: clamp(20px, 4vw, 48px);
     font-weight: 500;
+}
+
+@media screen and (max-width:768px) {
+    .banner {
+        height: 111px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .banner_about {
+        height: 111px;
+        border-radius: 10px;
+    }
 }

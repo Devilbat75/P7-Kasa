@@ -48,9 +48,9 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .kasa-fiche-logement {
-        height: 200px;
+        height: 255px;
     }
 }
 
